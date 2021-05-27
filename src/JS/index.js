@@ -10,10 +10,35 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-let firestore = firebase.firestore();
-let test = firestore.doc('Products/shoes');
-console.log(test);
+let db = firebase.firestore();
+db.settings({ timestampsInSnapshots: true});
 
 
+
+// LOGIN 
+
+let inputEmail = document.querySelector('#InputEmail');
+let inputPassword = document.querySelector('#InputPassword');
+let submitBtn = document.querySelector('.submit-btnn');
+
+let userVerification = function(){
+  let email = inputEmail.value;
+  let pass = inputPassword.value;
+  // const auth = firebase.auth();
+  firebase.auth().signInWithEmailAndPassword(email, pass).then( userCredential => {
+    let user = userCredential.user;
+    console.log(email,pass);
+    window.location.href = "/src/Index.html";
+  }).catch( e => {
+    let errorCode = e.code;
+    console.log("error");
+  });
+}
+
+submitBtn.addEventListener('click', userVerification);
 // login page styles
-
+// db.collection('Products').get().then((snapshot) =>{
+//   snapshot.docs.forEach(doc => {
+//     console.log(doc.data())
+//   })
+// } )
