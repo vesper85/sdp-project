@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/login-signup-custom.css" />
+    <title>LogIn</title>
+    <script defer src="./JS/index.js"></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+
+    <nav>
+      <div class="links-container">
+        <a class="nav-links">eyeware</a>
+        <a class="nav-links">watches</a>
+        <a class="nav-links">sale</a>
+        <a class="nav-links">brand</a>
+      </div>
+      <div class="logo">logo</div>
+      <div class="right">
+        <div class="serch">search</div>
+        <div class="user">user</div>
+        <div class="shopping-cart">cart</div>
+      </div>
+    </nav>
+
+
+    <!-- login form -->
+
+    <div class="main-container container-fluid">
+        <div class="container-fluid heading">
+            <h1>sign in</h1>
+        </div>
+        <div class="container-fluid login-box">
+            <div class="left-box container-fluid">
+                <!-- bootstrap forms code  -->
+                <form>
+                    <div class="form-group">
+                      <label for="InputEmail">Email address</label>
+                      <input type="email" class="form-control  shadow-none" id="InputEmail" aria-describedby="emailHelp" >
+                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="form-group">
+                      <label for="InputPassword">Password</label>
+                      <input type="password" class="form-control  shadow-none " id="InputPassword" >
+                    </div>
+                    <!-- <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary submit-btnn">sign in</button>
+                  </form>
+    
+            </div>
+            <div class="right-box container-fluid">
+                    <form>
+                        <div class="tag">
+                            <h5>NEW CUSTOMER?</h5>
+                            <p>Create an account with us and you'll be able to:</p>
+                            <ul>
+                                <li>Check out faster</li>
+                                <li>Save multiple shipping addresses</li>
+                                <li>Access your order history</li>
+                                <li>Track new orders</li>
+                            </ul>
+                            <button class="btn-create">create account</button>
+                        </div>
+                    </form>
+            </div>
+            
+        </div>
+    </div>
+  </body>
+</html>

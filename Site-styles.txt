@@ -1,0 +1,7 @@
+
+////  MAIN  ////
+primary color - white
+secondary color - black
+font family [ body ] - futura-pt-book
+#MESSAGE CONTAINER
+background color - #060506

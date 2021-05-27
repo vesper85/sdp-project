@@ -1,0 +1,162 @@
+/*  GLOBAL  */
+
+* {
+  margin: 0%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* /////// NAVIGATION ///////////// */
+
+nav {
+  width: 100%;
+  height: 80px;
+  /* background-color: rgb(78, 78, 90); */
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px black solid;
+}
+
+nav > * {
+  width: 100%;
+}
+.links-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-links {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* left side NAVIGATION BAR */
+
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*  END NAV */
+
+
+/*  LOGIN BOX  */
+
+.form-control:focus {
+    border-color: #949494;
+}
+.heading{
+    text-align: center;
+    margin: 40px;
+}
+.heading>h1{
+    text-transform:uppercase;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.left-box{
+    padding: 40px;
+    padding-right: 20px;
+}
+.right-box{
+    background-color: #ddd;
+}
+
+
+#InputEmail,#InputPassword{
+    border-radius: 0px;
+    width: 100%;
+    margin: 5px;
+    margin-left: 0px;
+    /* margin-left: 0; */
+    background-color: #f6f6f6;
+}
+
+.btn{
+    background-color: black;
+    border-radius: 0px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+   
+
+    /* alignment */
+
+    margin: 10px;
+    margin-left: 0px;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: black;
+}
+
+.btn-create{
+    color: white;
+    background-color: black;
+    border-radius: 0px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 20px;
+}
+
+.tag{
+    padding: 10px;
+    padding-top: 30px;
+    margin: 40px;
+    margin-bottom: 20px;
+}
+.tag > h5{
+    font-weight: 800;
+}
+
+.tag > ul{
+    margin-left: 10px;
+}
+
+
+
+/* login responsive */
+
+@media screen and (min-width: 800px) {
+    .login-box{
+     display: flex;
+       justify-content: space-around;
+    }
+    #InputEmail,#InputPassword{
+        border-radius: 0px;
+        width: 80%;
+        margin: 5px;
+        margin-left: 0;
+        background-color: #f6f6f6;
+    }
+    .left-box{
+        padding: 80px;
+        padding-right: 20px;
+    }
+    .right-box{
+        margin: 1vw;
+    }
+    .main-container{
+        padding: 0px 60px;
+    }
+}
